@@ -8,14 +8,25 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var menuItems = ["Dashboard", "Incomes", "Expenses", "Settings"]
+    @State private var selection: String?
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationSplitView {
+            List(menuItems, id: \.self, selection: $selection) { item in
+                HStack {
+                    Image(systemName: "person")
+                    Text(item)
+                }
+            }
+            .navigationTitle(Text("Title"))
+        } detail: {
+            if let selected = selection {
+                Text(selected)
+            } else {
+                Text("Select an item")
+            }
         }
-        .padding()
+
     }
 }
 
