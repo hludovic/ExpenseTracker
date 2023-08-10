@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		433BF8D32A84840300C3D77C /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433BF8D22A84840300C3D77C /* MenuItem.swift */; };
 		43E08F012A83581900F34609 /* ExpenseTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E08F002A83581900F34609 /* ExpenseTrackerApp.swift */; };
 		43E08F032A83581900F34609 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E08F022A83581900F34609 /* ContentView.swift */; };
 		43E08F052A83581900F34609 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43E08F042A83581900F34609 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		433BF8D22A84840300C3D77C /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 		43E08EFD2A83581900F34609 /* ExpenseTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExpenseTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43E08F002A83581900F34609 /* ExpenseTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseTrackerApp.swift; sourceTree = "<group>"; };
 		43E08F022A83581900F34609 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,6 +56,7 @@
 			children = (
 				43E08F002A83581900F34609 /* ExpenseTrackerApp.swift */,
 				43E08F022A83581900F34609 /* ContentView.swift */,
+				433BF8D22A84840300C3D77C /* MenuItem.swift */,
 				43E08F042A83581900F34609 /* Assets.xcassets */,
 				43E08F062A83581900F34609 /* ExpenseTracker.entitlements */,
 				43E08F072A83581900F34609 /* Preview Content */,
@@ -139,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				433BF8D32A84840300C3D77C /* MenuItem.swift in Sources */,
 				43E08F032A83581900F34609 /* ContentView.swift in Sources */,
 				43E08F012A83581900F34609 /* ExpenseTrackerApp.swift in Sources */,
 			);
