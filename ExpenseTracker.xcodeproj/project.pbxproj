@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		433BF8D32A84840300C3D77C /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433BF8D22A84840300C3D77C /* MenuItem.swift */; };
+		433BF8D72A84883F00C3D77C /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433BF8D62A84883F00C3D77C /* SettingsView.swift */; };
+		433BF8D92A84893800C3D77C /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433BF8D82A84893800C3D77C /* DashboardView.swift */; };
+		433BF8DB2A84894F00C3D77C /* IncomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433BF8DA2A84894F00C3D77C /* IncomeView.swift */; };
+		433BF8DD2A8489A100C3D77C /* ExpenseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433BF8DC2A8489A100C3D77C /* ExpenseView.swift */; };
 		43E08F012A83581900F34609 /* ExpenseTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E08F002A83581900F34609 /* ExpenseTrackerApp.swift */; };
 		43E08F032A83581900F34609 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E08F022A83581900F34609 /* ContentView.swift */; };
 		43E08F052A83581900F34609 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43E08F042A83581900F34609 /* Assets.xcassets */; };
@@ -16,6 +20,10 @@
 
 /* Begin PBXFileReference section */
 		433BF8D22A84840300C3D77C /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
+		433BF8D62A84883F00C3D77C /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		433BF8D82A84893800C3D77C /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		433BF8DA2A84894F00C3D77C /* IncomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeView.swift; sourceTree = "<group>"; };
+		433BF8DC2A8489A100C3D77C /* ExpenseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseView.swift; sourceTree = "<group>"; };
 		43E08EFD2A83581900F34609 /* ExpenseTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExpenseTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43E08F002A83581900F34609 /* ExpenseTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseTrackerApp.swift; sourceTree = "<group>"; };
 		43E08F022A83581900F34609 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -35,6 +43,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		433BF8D52A8487FC00C3D77C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				43E08F022A83581900F34609 /* ContentView.swift */,
+				433BF8D82A84893800C3D77C /* DashboardView.swift */,
+				433BF8DC2A8489A100C3D77C /* ExpenseView.swift */,
+				433BF8DA2A84894F00C3D77C /* IncomeView.swift */,
+				433BF8D62A84883F00C3D77C /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		43E08EF42A83581900F34609 = {
 			isa = PBXGroup;
 			children = (
@@ -55,8 +75,8 @@
 			isa = PBXGroup;
 			children = (
 				43E08F002A83581900F34609 /* ExpenseTrackerApp.swift */,
-				43E08F022A83581900F34609 /* ContentView.swift */,
 				433BF8D22A84840300C3D77C /* MenuItem.swift */,
+				433BF8D52A8487FC00C3D77C /* Views */,
 				43E08F042A83581900F34609 /* Assets.xcassets */,
 				43E08F062A83581900F34609 /* ExpenseTracker.entitlements */,
 				43E08F072A83581900F34609 /* Preview Content */,
@@ -166,6 +186,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				433BF8D32A84840300C3D77C /* MenuItem.swift in Sources */,
+				433BF8DB2A84894F00C3D77C /* IncomeView.swift in Sources */,
+				433BF8D72A84883F00C3D77C /* SettingsView.swift in Sources */,
+				433BF8DD2A8489A100C3D77C /* ExpenseView.swift in Sources */,
+				433BF8D92A84893800C3D77C /* DashboardView.swift in Sources */,
 				43E08F032A83581900F34609 /* ContentView.swift in Sources */,
 				43E08F012A83581900F34609 /* ExpenseTrackerApp.swift in Sources */,
 			);

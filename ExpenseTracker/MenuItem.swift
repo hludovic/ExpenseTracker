@@ -16,40 +16,28 @@ enum MenuItem: Identifiable, CaseIterable {
 
     var title: String {
         switch self {
-        case .dashboard:
-            return "Dashboard"
-        case .income:
-            return "Income"
-        case .expense:
-            return "Expenses"
-        case .settings:
-            return "Settings"
+        case .dashboard: return "Dashboard"
+        case .income: return "Income"
+        case .expense: return "Expenses"
+        case .settings: return "Settings"
         }
     }
 
     var systemImage: String {
         switch self {
-        case .dashboard:
-            return "chart.xyaxis.line"
-        case .income:
-            return "chart.pie"
-        case .expense:
-            return "chart.line.downtrend.xyaxis"
-        case .settings:
-            return "gear"
+        case .dashboard: return "chart.xyaxis.line"
+        case .income: return "chart.pie"
+        case .expense: return "chart.line.downtrend.xyaxis"
+        case .settings: return "gear"
         }
     }
 
-    var view: some View {
+    @ViewBuilder var view: some View {
         switch self {
-        case .dashboard:
-            return Text("Dashboard")
-        case .income:
-            return Text("Income")
-        case .expense:
-            return Text("Expenses")
-        case .settings:
-            return Text("Settings")
+        case .dashboard: DashboardView()
+        case .income: IncomeView()
+        case .expense: ExpenseView()
+        case .settings: SettingsView()
         }
 
     }

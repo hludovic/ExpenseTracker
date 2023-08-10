@@ -10,6 +10,7 @@ import SwiftUI
 struct ContentView: View {
     @State private var menuItems: [MenuItem] = MenuItem.allCases
     @State private var selection: MenuItem?
+
     var body: some View {
         NavigationSplitView {
             List(menuItems, selection: $selection) { item in
