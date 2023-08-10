@@ -27,7 +27,7 @@ enum MenuItem: Identifiable, CaseIterable {
         }
     }
 
-    var image: String {
+    var systemImage: String {
         switch self {
         case .dashboard:
             return "chart.xyaxis.line"

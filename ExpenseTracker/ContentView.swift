@@ -13,10 +13,11 @@ struct ContentView: View {
     var body: some View {
         NavigationSplitView {
             List(menuItems, selection: $selection) { item in
-                NavigationLink(value: item){
-                    Label(item.title, systemImage: item.image)
+                NavigationLink(value: item) {
+                    Label(item.title, systemImage: item.systemImage)
                 }
             }
+            .navigationTitle("Title")
         } detail: {
             if let selected = selection {
                 selected.view
@@ -24,7 +25,6 @@ struct ContentView: View {
                 Text("Select an item")
             }
         }
-
     }
 }
 
