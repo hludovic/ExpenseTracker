@@ -12,6 +12,8 @@
 		433BF8D92A84893800C3D77C /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433BF8D82A84893800C3D77C /* DashboardView.swift */; };
 		433BF8DB2A84894F00C3D77C /* IncomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433BF8DA2A84894F00C3D77C /* IncomeView.swift */; };
 		433BF8DD2A8489A100C3D77C /* ExpenseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433BF8DC2A8489A100C3D77C /* ExpenseView.swift */; };
+		4349A42E2A86D5CA00F1318F /* CategoryIncomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4349A42D2A86D5CA00F1318F /* CategoryIncomeView.swift */; };
+		4349A4302A86D5EF00F1318F /* CategoryExpenseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4349A42F2A86D5EF00F1318F /* CategoryExpenseView.swift */; };
 		43E08F012A83581900F34609 /* ExpenseTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E08F002A83581900F34609 /* ExpenseTrackerApp.swift */; };
 		43E08F032A83581900F34609 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E08F022A83581900F34609 /* ContentView.swift */; };
 		43E08F052A83581900F34609 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43E08F042A83581900F34609 /* Assets.xcassets */; };
@@ -24,6 +26,8 @@
 		433BF8D82A84893800C3D77C /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		433BF8DA2A84894F00C3D77C /* IncomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeView.swift; sourceTree = "<group>"; };
 		433BF8DC2A8489A100C3D77C /* ExpenseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseView.swift; sourceTree = "<group>"; };
+		4349A42D2A86D5CA00F1318F /* CategoryIncomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryIncomeView.swift; sourceTree = "<group>"; };
+		4349A42F2A86D5EF00F1318F /* CategoryExpenseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryExpenseView.swift; sourceTree = "<group>"; };
 		43E08EFD2A83581900F34609 /* ExpenseTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExpenseTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43E08F002A83581900F34609 /* ExpenseTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseTrackerApp.swift; sourceTree = "<group>"; };
 		43E08F022A83581900F34609 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -46,13 +50,30 @@
 		433BF8D52A8487FC00C3D77C /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				43E08F022A83581900F34609 /* ContentView.swift */,
 				433BF8D82A84893800C3D77C /* DashboardView.swift */,
 				433BF8DC2A8489A100C3D77C /* ExpenseView.swift */,
 				433BF8DA2A84894F00C3D77C /* IncomeView.swift */,
-				433BF8D62A84883F00C3D77C /* SettingsView.swift */,
+				4349A42B2A86D57F00F1318F /* Settings */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		433BF8DE2A84A19800C3D77C /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				433BF8D22A84840300C3D77C /* MenuItem.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		4349A42B2A86D57F00F1318F /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				433BF8D62A84883F00C3D77C /* SettingsView.swift */,
+				4349A42D2A86D5CA00F1318F /* CategoryIncomeView.swift */,
+				4349A42F2A86D5EF00F1318F /* CategoryExpenseView.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 		43E08EF42A83581900F34609 = {
@@ -75,8 +96,9 @@
 			isa = PBXGroup;
 			children = (
 				43E08F002A83581900F34609 /* ExpenseTrackerApp.swift */,
-				433BF8D22A84840300C3D77C /* MenuItem.swift */,
+				43E08F022A83581900F34609 /* ContentView.swift */,
 				433BF8D52A8487FC00C3D77C /* Views */,
+				433BF8DE2A84A19800C3D77C /* Utilities */,
 				43E08F042A83581900F34609 /* Assets.xcassets */,
 				43E08F062A83581900F34609 /* ExpenseTracker.entitlements */,
 				43E08F072A83581900F34609 /* Preview Content */,
@@ -187,11 +209,13 @@
 			files = (
 				433BF8D32A84840300C3D77C /* MenuItem.swift in Sources */,
 				433BF8DB2A84894F00C3D77C /* IncomeView.swift in Sources */,
+				4349A4302A86D5EF00F1318F /* CategoryExpenseView.swift in Sources */,
 				433BF8D72A84883F00C3D77C /* SettingsView.swift in Sources */,
 				433BF8DD2A8489A100C3D77C /* ExpenseView.swift in Sources */,
 				433BF8D92A84893800C3D77C /* DashboardView.swift in Sources */,
 				43E08F032A83581900F34609 /* ContentView.swift in Sources */,
 				43E08F012A83581900F34609 /* ExpenseTrackerApp.swift in Sources */,
+				4349A42E2A86D5CA00F1318F /* CategoryIncomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
